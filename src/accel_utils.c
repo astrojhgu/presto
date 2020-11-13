@@ -1,3 +1,5 @@
+#include <fcntl.h>
+#include <sys/mman.h>
 #include "accel.h"
 #include "accelsearch_cmd.h"
 

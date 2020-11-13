@@ -26,7 +26,7 @@ PNGLINK := $(shell pkg-config --libs libpng)
 # Include and link information for PGPLOT v5.X (including shared libs!)
 # Typically you need to have your PGPLOT_DIR environment variable set
 PGPLOTINC = -I$(PGPLOT_DIR)
-PGPLOTLINK = -L$(PGPLOT_DIR) -lcpgplot -lpgplot $(X11LINK) $(PNGLINK)
+PGPLOTLINK = -L$(PGPLOT_DIR) -lpgplot -lcpgplot $(X11LINK) $(PNGLINK)
 
 # Include and link information for the FFTW 3.X single-precision library
 FFTINC := $(shell pkg-config --cflags fftw3f)
